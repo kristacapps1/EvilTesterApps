@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  
+  <title>Basic Ajax</title>
+
+      <script type="text/javascript" charset="utf-8">
+
+          function changeCombo1(){
+
+              document.getElementById("ajaxBusy").style.display = "block";
+
+              var combo1 = document.getElementById("combo1");
+
+              var request = new XMLHttpRequest();
+              request.open('GET', '../ajaxselect.php?id='+combo1.value, true);
+
+              request.onload = function() {
+                  if (request.status >= 200 && request.status < 400) {
+                      var data = JSON.parse(request.responseText);
+                      var options = '';
+                      for (var i = 0; i < data.length; i++) {
+                          options += '<option value="' + data[i].optionValue + '">' + data[i].optionDisplay + '</option>';
+                      }
+
+                      var combo2 = document.getElementById("combo2");
+                      combo2.innerHTML = options;
+                      combo2.getElementsByTagName("option")[0].setAttribute("selected", "selected");
+
+                      document.getElementById("ajaxBusy").style.display = "none";
+
+                  } else {
+                      // We reached our target server, but it returned an error
+                      console.log("error reading option json");
+                      document.getElementById("ajaxBusy").style.display = "none";
+                  }
+              };
+
+              request.onerror = function() {
+                  console.log("connection error reading option json");
+                  document.getElementById("ajaxBusy").style.display = "none";
+              };
+
+              request.send();
+
+          }
+
+		
+		function checkGT30(value) {
+			if (value>30)
+				alert("Enter a value less than 30");
+			}
+		</script>
+  
+  
+  </head>
+  <body>
+
+    <form method="post" action="form_processor.php?ajax=1">
+      <label for="combo1">Category:</label>
+      <select name="id" id="combo1">
+        <option value="1">Web</option>
+        <option value="2">Desktop</option>
+        <option value="3">Server</option>
+      </select>
+      <noscript>
+        <input type="submit" name="submitbutton" value="Load Individuals" />
+      </noscript>
+      <label for="combo2">Language:</label>
+      <select name="language_id" id="combo2">
+        <option value="1">Javascript</option>
+        <option value="2">VBScript</option>
+        <option value="3">Flash</option>
+      </select>
+	  <span id="ajaxBusy" style="display: none;"><img src="ajax-loader.gif"/></span>
+	
+    <input type="submit" name="submitbutton" value="Code In It" />
+	
+	</br>
+	Values Less Than 30 please : <input type="text" id="lteq30" onBlur="checkGT30(this.value)">
+    </form>
+
+    <script>
+        window.onload = function() {
+            document.getElementById("combo1").addEventListener("change", changeCombo1);
+        }
+    </script>
+
+  </body>
+</html>

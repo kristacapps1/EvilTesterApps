@@ -1,0 +1,77 @@
+# Notes to the developer
+
+`mvn package` to create the jar file configured in the pom.xml
+
+run from target for local testing
+
+java -jar target\rest-list-system-1.1-SNAPSHOT-jar-with-dependencies
+
+java -jar target\rest-list-system-1.1-SNAPSHOT-jar-with-dependencies -bugfixes=false -port=1234
+
+
+
+
+
+For heroku:
+
+heroku local web -f Procfile.windows
+
+
+
+Heroku
+
+- view logs from More - `view logs`
+
+- edit environment variables on `Settings`, `Config Variables`
+   - `Reveal Config Vars`
+   - add variables
+      - currently none used
+
+- start app on Resources page
+    - click edit
+    - flip 'on' switch to 'on'
+    - confirm
+
+- stop app on Resources page
+    - click edit
+    - flip 'on' switch to 'off'
+    - confirm
+
+
+# deploy to heroku
+
+Development notes.
+
+First install heroku
+
+https://devcenter.heroku.com/articles/heroku-cli
+
+I'm on mac
+
+- `brew tap heroku/brew && brew install heroku`
+- `heroku plugins:install heroku-cli-deploy`
+- `heroku login`
+- `mvn package`
+- `heroku deploy:jar target/rest-list-system-1-2-1-jar-with-dependencies.jar --app rest-list-system`
+
+had to add `:target/*` to the procfile when deploying fat app
+
+after deployment:
+
+https://rest-list-system.herokuapp.com
+
+
+To run locally
+
+`heroku local -f Procfile.windows`
+
+
+Set the Config vars
+
+RestListicatorApiResetMillis
+1000*60*5
+300000
+
+RestListicatorMaxSessionSeconds
+2 minutes
+120

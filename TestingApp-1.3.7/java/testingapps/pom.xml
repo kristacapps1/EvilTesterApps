@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+   <parent>
+        <groupId>uk.co.compendiumdev.testing</groupId>
+        <artifactId>testapp</artifactId>
+        <version>1-3-7</version>
+    </parent>
+
+    <groupId>uk.co.compendiumdev.testing</groupId>
+    <artifactId>testing-apps-root</artifactId>
+    <version>1-1-0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+
+        <module>testingappsindex</module>
+        <module>sparktesting</module>
+        <module>httpabstraction</module>
+
+        <!-- the following apps all use spark -->
+        <module>seleniumtestpages</module>
+        <module>compendiumdevapps</module>
+        <module>restlisticator</module>
+        <module>thepulper</module>
+
+        <!-- one app to rule them all -->
+        <module>testingapp</module>
+
+    </modules>
+</project>

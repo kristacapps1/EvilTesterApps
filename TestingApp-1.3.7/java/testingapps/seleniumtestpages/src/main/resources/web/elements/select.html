@@ -1,0 +1,142 @@
+<html>
+<head>
+    <title>Support Classes Example</title>
+</head>
+<body>
+
+<script>
+
+    function changeselect(obj){
+
+        hideTheMessage();
+
+        var timeout = Math.floor((Math.random() * 2000) + 500);
+
+        var selectedList = "";
+
+        if(obj.multiple) {
+            for (var index = 0; index < obj.options.length; index++) {
+
+                opt = obj.options[index];
+
+                if (opt.selected) {
+                    selectedList = selectedList + opt.value;
+                    selectedList = selectedList + ", ";
+                }
+            }
+
+            if(selectedList.endsWith(", ")){
+                selectedList = selectedList.substr(0, selectedList.length-2);
+            }
+
+            if(selectedList.length==0){
+                selectedList="NOTHING";
+            }
+
+        }else{
+            selectedList = obj.value;
+        }
+
+        var displayMessage = "Received message: selected " + selectedList;
+
+        var addUnder = "single-list";
+        if(obj.multiple) {
+            var addUnder = "multi-list";
+        }
+
+        var optionalRandomTiming = location.hash ? parseInt(location.hash.substr(1)) : 0;
+        if(optionalRandomTiming!=0){
+            // delay history if hash has number
+            var hashtimeout = Math.floor((Math.random() * optionalRandomTiming) + 500);
+            setTimeout(addHistoryText,hashtimeout, displayMessage, addUnder);
+        }else {
+            // display history immediately
+            addHistoryText(displayMessage, addUnder);
+        }
+
+
+        setTimeout(displayThisMessage, timeout, displayMessage);
+
+    }
+
+    function hideTheMessage(){
+        // rather than display blank
+        // document.getElementById("message").innerText="";
+        //remove entirely to simulate Ajax style calls
+        var elem = document.getElementById("message");
+        if(elem){
+            elem.parentNode.removeChild(elem);
+        }
+    }
+
+    function displayThisMessage(theMessage){
+        var elem = document.getElementById("message");
+        if(!elem){
+            elem =  document.createElement("p");
+            elem.setAttribute("id","message");
+            document.getElementById("message-render").appendChild(elem);
+        }
+        document.getElementById("message").innerText=theMessage;
+    }
+
+    function addHistoryText(displayMessage, addUnder){
+        var liElement = document.createElement("li");
+        liElement.setAttribute("class", "message");
+        var textElement = document.createTextNode(displayMessage);
+        liElement.appendChild(textElement);
+        document.getElementById(addUnder).appendChild(liElement);
+    }
+
+</script>
+
+<h2 id="instruction-title" style="background-color: #000000; color: rgb(255,0,0);">Instructions</h2>
+
+<p id="instruction-text" name="instructions" data-locator="instructions">Select an item from the list to show the response message.</p>
+
+<hr/>
+
+<select id="select-menu" onchange="changeselect(this)">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+    <option value="4">Option 4</option>
+</select>
+
+<button id="resend-select" onclick="changeselect(document.getElementById('select-menu'))">Resend Single Option Message</button>
+
+<hr/>
+
+<select id="select-multi" size="5" multiple onchange="changeselect(this)">
+    <option value="10">First</option>
+    <option value="20">Second</option>
+    <option value="30">Third</option>
+    <option value="40">Fourth</option>
+    <option value="50">Fifth</option>
+</select>
+
+<button id="resend-multi" name="resend-select" onclick="changeselect(document.getElementById('select-multi'))">Resend Multi Option Message</button>
+
+<hr/>
+
+<div id="message-render">
+    <!-- <p id="message"></p> -->
+</div>
+
+<hr/>
+
+<h2 id="history">Message History</h2>
+
+<ul id="messages">
+
+    <li id="single">Single
+        <ul id="single-list" name="list"></ul>
+    </li>
+    <li id="multi">Multi
+        <ul id="multi-list" name="list"></ul>
+    </li>
+
+</ul>
+
+
+</body>
+</html>

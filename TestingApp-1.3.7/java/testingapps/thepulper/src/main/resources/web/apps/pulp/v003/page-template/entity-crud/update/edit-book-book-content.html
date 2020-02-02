@@ -1,0 +1,83 @@
+<h2>Amend Book</h2>
+
+<div id="amendbooksection">
+
+    <div>
+        <form id="amendbookform" action="book" method="post">
+
+            <input type = "hidden" name="bookid" value="!!BOOKID!!"/>
+            <label for="booktitle">Title of book</label>
+            <input type="text" id="booktitle" name="title" value="!!BOOKTITLE!!" required="required" pattern=".{1,}">
+
+            <br/>
+
+
+
+             <label for="authoridselect">Author</label>
+             <select id="authoridselect" name="authorid" required="required" multiple required>
+                <!-- AUTHOR-ID-OPTIONS -->
+                <option value="unknown">Author</option>
+                <!-- AUTHOR-ID-OPTIONS -->
+            </select>
+            <br/>
+
+
+            <label for="houseauthoridselect">House Author</label>
+            <select id="houseauthoridselect" name="houseauthorid" required="required">
+                <!-- HOUSE-AUTHOR-ID-OPTIONS -->
+                <option value="UNKNOWN">UNKNOWN</option>
+                <!-- HOUSE-AUTHOR-ID-OPTIONS -->
+            </select>
+            <br/>
+
+            <label for="publisheridselect">Publisher</label>
+            <select id="publisheridselect" name="publisherid" required="required">
+                <!-- PUBLISHER-ID-OPTIONS -->
+                <option value="unknown">Publisher</option>
+                <!-- PUBLISHER-ID-OPTIONS -->
+            </select>
+            <br/>
+
+            <label for="seriesidselect">Series</label>
+            <select id="seriesidselect" name="seriesid" required="required">
+                <!-- SERIES-ID-OPTIONS -->
+                <option value="unknown">Series</option>
+                <!-- SERIES-ID-OPTIONS -->
+            </select>
+            <br/>
+
+            <label for="seriesidentifierid">Series Identifier e.g. "March, 1933"</label>
+            <input type="text" id="seriesidentifierid" name="seriesidentifier" value="!!SERIESIDENTIFIER!!" required="required" pattern=".{1,}">
+            <br/>
+
+            <label for="yearofPub">Year of publication e.g. 1933</label>
+            <input type="number" id="yearofPub" name="yearofpub" value="!!PUBLICATIONYEAR!!" required="required" pattern=".{1,}">
+            <br/>
+
+
+            <input id="updatebookbutton" type="submit" value="Update" />
+        </form>
+        <hr/>
+        <form id="deleteform" action="deletebook" method="post" onsubmit="return areYouSureYouWantToDeleteBook()">
+            <input type = "hidden" name="bookid" value="!!BOOKID!!"/>
+            <input id="deletebookbutton" type="submit" value="Delete" />
+        </form>
+    </div>
+
+    <hr/>
+
+    <div name="view-actions">
+        <a href="/apps/pulp/gui/view/book?book=!!BOOKID!!" id="view-book-link-!!BOOKID!!" title="View Book !!BOOKTITLE!!">View Book</a>
+    </div>
+
+    <hr/>
+
+    <div name="link-items">
+        <!-- list of books -->
+        <a href="/apps/pulp/gui/reports/books/table/navigation?book=!!BOOKID!!" id="book-list-series-link-!!BOOKID!!" title="Book in list">Book As List</a>
+    </div>
+</div>
+
+<!-- OUTPUT GOES HERE -->
+
+<!-- FOOTER GOES HERE -->

@@ -1,0 +1,35 @@
+<script type="text/javascript">
+    function areYouSureYouWantToDeleteSeries(){
+        if(confirm("Are you sure you want to delete !!SERIESNAME!!?")){
+            return true;
+        }else{
+            return false;
+        }
+    }
+</script>
+
+<h1>Amend Series</h1>
+
+<div id="amendobjectsection">
+
+    <div>
+        <form action="series" method="post">
+
+            <input type = "hidden" name="seriesid" value="!!ID!!"/>
+            <label for="seriesname">Name of Series</label>
+            <input type="text" id="seriesname" name="seriesname" required="required" value="!!SERIESNAME!!" pattern=".{1,}">
+
+            <br/>
+            <input type="submit" value="Update" />
+        </form>
+        <hr/>
+        <form action="deleteseries" method="post" onsubmit="return areYouSureYouWantToDeleteSeries()" >
+            <input type = "hidden" name="seriesid" value="!!ID!!"/>
+            <input type="submit" value="Delete" />
+        </form>
+    </div>
+
+</div>
+<!-- OUTPUT GOES HERE -->
+
+<!-- FOOTER GOES HERE -->

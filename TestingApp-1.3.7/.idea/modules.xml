@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java/testingapps/compendiumdevapps/compendiumdevapps1.iml" filepath="$PROJECT_DIR$/java/testingapps/compendiumdevapps/compendiumdevapps1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/testingapps/compendiumdevapps/src/test/compendiumdevappstests.iml" filepath="$PROJECT_DIR$/java/testingapps/compendiumdevapps/src/test/compendiumdevappstests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/testingapps/httpabstraction/httpabstraction1.iml" filepath="$PROJECT_DIR$/java/testingapps/httpabstraction/httpabstraction1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/testingapps/restlisticator/src/main/restlisticator.iml" filepath="$PROJECT_DIR$/java/testingapps/restlisticator/src/main/restlisticator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/testingapps/restlisticator/src/test/restlisticatortests.iml" filepath="$PROJECT_DIR$/java/testingapps/restlisticator/src/test/restlisticatortests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/testingapps/seleniumtestpages/seleniumtestpages.iml" filepath="$PROJECT_DIR$/java/testingapps/seleniumtestpages/seleniumtestpages.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/testingapps/sparktesting/sparktesting.iml" filepath="$PROJECT_DIR$/java/testingapps/sparktesting/sparktesting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/testingapps/testingapp/testingapp.iml" filepath="$PROJECT_DIR$/java/testingapps/testingapp/testingapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/testingapps/thepulper/src/main/thepulper.iml" filepath="$PROJECT_DIR$/java/testingapps/thepulper/src/main/thepulper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/testingapps/thepulper/src/test/thepulpertests.iml" filepath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/thepulpertests.iml" />
+    </modules>
+  </component>
+</project>
