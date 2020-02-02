@@ -5,4 +5,5 @@ I have configured his repo to build and run in IntelliJ IDEA
 1. Ensure IntelliJ IDEA is downloaded properly and is able to use Maven
 2. Select File -> New -> Project from Version Control...
 3. Enter url https://github.com/kristacapps1/EvilTesterApps.git and login to git
-4. The IntelliJ source roots and their module and lib dependencies will already be set up and should compile correctly
+4. When IntelliJ asks if you want to create new project from source select No
+5. The IntelliJ source roots and their module and lib dependencies will already be set up and should compile correctly
