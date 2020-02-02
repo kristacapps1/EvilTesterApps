@@ -1,6 +1,7 @@
 # TestingApp
 This repo is the set of projects created by https://github.com/eviltester to practice good testing techniques.
 I have configured his repo to build and run in IntelliJ IDEA
+Original repo link: https://github.com/eviltester/TestingApp
 ## Setup
 1. Ensure IntelliJ IDEA is downloaded properly and is able to use Maven
 2. Add GitHub account by doing File -> Settings -> Version Control -> GitHub and add account login
