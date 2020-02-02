@@ -6,7 +6,7 @@ I have configured his repo to build and run in IntelliJ IDEA
 2. Add GitHub account by doing File -> Settings -> Version Control -> GitHub and add account login
 3. Select File -> New -> Project from Version Control...
 4. Enter url https://github.com/kristacapps1/EvilTesterApps.git 
-5. When IntelliJ asks if you want to create new project from source select No
+5. When IntelliJ asks if you want to create new project from source select No or else it will overwrite the project settings
 6. Do File -> Open and select the folder EvilTesterApps/TestingApp-1.3.7 
 7.The IntelliJ source roots and their module and lib dependencies will already be set up and should compile correctly. To compile, right click module named testingapp and select Build Module. The module dependencies will ensure all the other modules are built first.
 ## Running Tests
