@@ -1,6 +1,6 @@
 # TestingApp
 This repo is the set of projects created by https://github.com/eviltester to practice good testing techniques.
-I have configured his repo to build and run in IntelliJ IDEA
+I have configured his repo to build and run in IntelliJ IDEA  
 Original repo link: https://github.com/eviltester/TestingApp
 ## Setup
 1. Ensure IntelliJ IDEA is downloaded properly and is able to use Maven
@@ -11,5 +11,5 @@ Original repo link: https://github.com/eviltester/TestingApp
 6. Do File -> Open and select the folder EvilTesterApps/TestingApp-1.3.7 
 7.The IntelliJ source roots and their module and lib dependencies will already be set up and should compile correctly. To compile, right click module named testingapp and select Build Module. The module dependencies will ensure all the other modules are built first.
 ## Running Tests
-In the Project view, right click for example test [thepulpertests]/java/com.javafortesters.pulp/domain and select Run Tests in com.javafortesters.pulp.domain
+In the Project view, right click for example test [thepulpertests]/java/com.javafortesters.pulp/domain and select Run Tests in com.javafortesters.pulp.domain  
 Tests can also be run with coverage information by selecting Run with coverage
