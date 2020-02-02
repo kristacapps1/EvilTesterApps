@@ -2,7 +2,7 @@
 This repo is the set of projects created by https://github.com/eviltester to practice good testing techniques.
 I have configured his repo to build and run in IntelliJ IDEA  
 ## Setup
-1. Ensure IntelliJ IDEA is downloaded properly and is able to use Maven
+1. Ensure IntelliJ IDEA is installed properly and is able to use Maven
 2. Add GitHub account by doing File -> Settings -> Version Control -> GitHub and add account login
 3. Select File -> New -> Project from Version Control...
 4. Enter url https://github.com/kristacapps1/EvilTesterApps.git 
