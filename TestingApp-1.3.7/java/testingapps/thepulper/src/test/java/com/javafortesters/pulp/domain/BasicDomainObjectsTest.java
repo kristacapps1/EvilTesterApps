@@ -62,7 +62,6 @@ public class BasicDomainObjectsTest {
 
 
 
-
     // I could use an in memory database but I'm much more likely to make a mistake if I don't, and this is a test app so mistakes are OK
 
 

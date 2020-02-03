@@ -6,7 +6,7 @@ import com.javafortesters.pulp.domain.groupings.PulpData;
 
 public class PulpEntities {
     private final PulpData bookdata;
-    private final DomainToEntityConvertor convertor;;
+    private final DomainToEntityConvertor convertor;
     private String rooturl;
 
     public PulpEntities(final PulpData books) {

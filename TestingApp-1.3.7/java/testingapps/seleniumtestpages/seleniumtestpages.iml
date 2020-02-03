@@ -37,5 +37,14 @@
     </orderEntry>
     <orderEntry type="library" exported="" name="javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="junit:junit:4.12" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../lib/selenium/selenium-server-standalone-3.141.59.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

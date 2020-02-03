@@ -18,16 +18,7 @@ public class CompilationApps {
     public static void main(String[] args) {
 
         Integer proxyport = 4567;    // default for spark
-
-        for(String arg : args){
-            if(arg.startsWith("-port")){
-                String[]details = arg.split("=");
-                if(details!=null && details.length>1){
-                    proxyport = Integer.parseInt(details[1].trim());
-                    System.out.println("Will configure web server to use port " + proxyport);
-                }
-            }
-        }
+        parseArguments(args, proxyport);
 
         Spark.port(proxyport);
 
@@ -42,7 +33,6 @@ public class CompilationApps {
 
 
         // because Spark is a singleton - these just have to register their routings, they don't need to do anything else
-
 
 
         get("/", (req, res) -> {
@@ -60,5 +50,17 @@ public class CompilationApps {
 
         System.out.println("Running on " + proxyport);
 
+    }
+
+    private static void parseArguments(String[] args, Integer proxyport){
+        for(String arg : args){
+            if(arg.startsWith("-port")){
+                String[]details = arg.split("=");
+                if(details!=null && details.length>1){
+                    proxyport = Integer.parseInt(details[1].trim());
+                    System.out.println("Will configure web server to use port " + proxyport);
+                }
+            }
+        }
     }
 }

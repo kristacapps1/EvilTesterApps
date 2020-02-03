@@ -36,6 +36,19 @@ public class AppEndPointTest {
     }
 
     @Test
+    public void canGetBooksByName(){
+
+        PulpData books = new PulpData();
+        PulpDataPopulator populator = new PulpDataPopulator(books);
+        SavageReader reader = new SavageReader("/data/pulp/doc_savage_test.csv");
+        populator.populateFrom(reader);
+
+        PulpBook singleBook = books.books().findByName("Quest of the Spider");
+
+        Assert.assertEquals(3, singleBook.getId());
+    }
+
+    @Test
     public void haveBasicAppWrapperForBooksByAuthor(){
         PulpApp app = new PulpApp();
         app.setAppVersion(1);
