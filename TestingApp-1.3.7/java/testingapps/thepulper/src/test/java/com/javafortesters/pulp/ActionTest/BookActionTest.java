@@ -9,12 +9,9 @@ import com.javafortesters.pulp.domain.objects.PulpBook;
 import com.javafortesters.pulp.reader.PulpDataPopulator;
 import com.javafortesters.pulp.reader.forseries.SavageReader;
 import org.eclipse.jetty.http.HttpStatus;
-import org.mockito.Mockito;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.List;
 
 public class BookActionTest {
     PulpData books;
@@ -36,14 +33,13 @@ public class BookActionTest {
         bookAction = new BookActions(books, converter, "/apps/pulp/api");
         realBook = books.books().findByName("The Angry Canary");
 
-        mockBook = Mockito.mock(PulpBook.class);
-        Mockito.when(mockBook.getId()).thenReturn(String.valueOf(3));
     }
 
     @Test
     public void canCreateReplace(){
         String bookid = "1";
-        /* NOTE: Would actually create test json files for bodies/responses but for now I just threw these in here */
+        /* NOTE: Would actually create test json files for bodies/responses and create a class for
+         * data processing as I did for SeleniumTestPages but for now I just threw these in here */
         String bodyjson =   "{\"authorIndexNames\":[\"1\",\"2\"],\"seriesIndexName\":\"1\",\"title\":\"Testers Guide\""
                             +",\"seriesId\":\"Jul / Aug, 1948\",\"publicationYear\":1948,\"publisherIndexName\":\"1\",\""
                             +"houseAuthorIndexName\":\"3\"}";
@@ -52,7 +48,8 @@ public class BookActionTest {
                               +":\"2\",\"name\":\"Will Murray\"}],\"series\":{\"id\":\"1\",\"name\":\"Doc Savage\"},\"publisher\""
                               +":{\"id\":\"1\",\"name\":\"Street And Smith\"}}]},\"logs\":{\"amended\":{\"books\":[{\"id\":\"1\"}]}}}";
         String contentType = "json";
-        /* The below fails because it cannot find the publisher and author */
+        /* The below fails because it cannot find the publisher, author, or series,
+        *  Which I suspect is a bug related to looking them up by IndexName */
         EntityResponse responseEntity = bookAction.createReplace(bookid, bodyjson, contentType, "");
         Assert.assertEquals(HttpStatus.OK_200,responseEntity.getStatusCode());
         Assert.assertEquals(bodyResponse,responseEntity.getResponseBody());

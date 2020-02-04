@@ -2,28 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4b614ae-aaec-44f0-8cdf-2af27737cd44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_mockito_mockito_core_1_10_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/testingapps/seleniumtestpages/src/test/java/uk/co/domain/FileUploadTest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/java/com/javafortesters/pulp/ActionTest/ActionProcessorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/java/com/javafortesters/pulp/ActionTest/AuthorActionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/java/com/javafortesters/pulp/ActionTest/BookActionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/java/com/javafortesters/pulp/ActionTest/PublisherActionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/java/com/javafortesters/pulp/ActionTest/SeriesActionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/testingapps/seleniumtestpages/src/test/DataDeliver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/testingapps/seleniumtestpages/src/test/SmokeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/testingapps/compendiumdevapps/src/test/compendiumdevappstests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java/testingapps/compendiumdevapps/src/test/compendiumdevappstests.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/testingapps/testingapp/src/main/java/co/uk/compendiumdev/testing/CompilationApps.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/testingapps/testingapp/src/main/java/co/uk/compendiumdev/testing/CompilationApps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/testingapps/thepulper/src/main/java/com/javafortesters/pulp/api/PulpEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/testingapps/thepulper/src/main/java/com/javafortesters/pulp/api/PulpEntities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/java/com/javafortesters/pulp/domain/AppEndPointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/java/com/javafortesters/pulp/domain/AppEndPointTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/java/com/javafortesters/pulp/domain/BasicDomainObjectsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/java/com/javafortesters/pulp/domain/BasicDomainObjectsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/thepulpertests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/thepulpertests.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/testingapps/seleniumtestpages/seleniumtestpages.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java/testingapps/seleniumtestpages/seleniumtestpages.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/testingapps/seleniumtestpages/src/test/java/uk/co/domain/FileUploadTest" beforeDir="false" afterPath="$PROJECT_DIR$/java/testingapps/seleniumtestpages/src/test/FileUploadTest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/java/com/javafortesters/pulp/ActionTest/BookActionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/java/com/javafortesters/pulp/ActionTest/BookActionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="190" />
+    <option name="myElementSize" value="698" />
   </component>
   <component name="ExportToHTMLSettings">
     <option name="OUTPUT_DIRECTORY" value="" />
@@ -32,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -65,23 +61,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/selenium/selenium-server-standalone-3.141.59.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/java/testingapps/seleniumtestpages/src/test" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.26509574" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="JUnit.All in testingapp">
-    <configuration name="All in compendiumdevapps1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="compendiumdevapps1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in restlisticator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="restlisticator" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\repo\EvilTesterApps2\TestingApp-1.3.7\java\testingapps\seleniumtestpages\src\test" />
+      <recent name="D:\projects\repo\EvilTesterApps2\TestingApp-1.3.7\java\testingapps\seleniumtestpages\src\test\java\uk\co\domain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.integration.sparkprocess in compendiumdevappstests">
+    <configuration name="All in compendiumdevappstests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="compendiumdevappstests" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
@@ -96,23 +90,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in testingapp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testingapp" />
+    <configuration name="SmokeTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seleniumtestpages" />
       <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SmokeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="integration.sparkprocess in compendiumdevappstests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="compendiumdevappstests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integration.sparkprocess.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integration.sparkprocess" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.javafortesters.pulp in thepulpertests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="thepulpertests" />
+    <configuration name="uk.co.compendiumdev.restlisticator in restlisticatortests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restlisticatortests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javafortesters.pulp.*" />
+          <option name="PATTERN" value="uk.co.compendiumdev.restlisticator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javafortesters.pulp" />
+      <option name="PACKAGE_NAME" value="uk.co.compendiumdev.restlisticator" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in testingapp" />
+        <item itemvalue="JUnit.integration.sparkprocess in compendiumdevappstests" />
+        <item itemvalue="JUnit.All in compendiumdevappstests" />
+        <item itemvalue="JUnit.uk.co.compendiumdev.restlisticator in restlisticatortests" />
         <item itemvalue="JUnit.All in restlisticatortests" />
-        <item itemvalue="JUnit.All in restlisticator" />
-        <item itemvalue="JUnit.All in compendiumdevapps1" />
-        <item itemvalue="JUnit.com.javafortesters.pulp in thepulpertests" />
+        <item itemvalue="JUnit.SmokeTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -174,10 +183,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added project settings" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="514" y="216" width="1070" height="538" key="#Project_Structure" timestamp="1580715644690">
+    <state x="514" y="216" width="1070" height="538" key="#Project_Structure" timestamp="1580779130436">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="514" y="216" width="1070" height="538" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1580715644690" />
+    <state x="514" y="216" width="1070" height="538" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1580779130436" />
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1580709740673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -210,30 +219,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="590" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580615105891" />
-    <state x="664" y="238" key="FileChooserDialogImpl" timestamp="1580715641820">
+    <state x="664" y="238" key="FileChooserDialogImpl" timestamp="1580779128345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="664" y="238" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580715641820" />
+    <state x="664" y="238" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580779128345" />
     <state x="819" y="414" key="Github.ShareDialog" timestamp="1580615026337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="819" y="414" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580615026337" />
-    <state width="1858" height="281" key="GridCell.Tab.0.bottom" timestamp="1580713710246">
+    <state width="1858" height="281" key="GridCell.Tab.0.bottom" timestamp="1580794685824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1858" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580713710246" />
-    <state width="1858" height="281" key="GridCell.Tab.0.center" timestamp="1580713710246">
+    <state width="1858" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580794685824" />
+    <state width="1858" height="281" key="GridCell.Tab.0.center" timestamp="1580794685824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1858" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580713710246" />
-    <state width="1858" height="281" key="GridCell.Tab.0.left" timestamp="1580713710246">
+    <state width="1858" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580794685824" />
+    <state width="1858" height="281" key="GridCell.Tab.0.left" timestamp="1580794685824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1858" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580713710246" />
-    <state width="1858" height="281" key="GridCell.Tab.0.right" timestamp="1580713710246">
+    <state width="1858" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580794685824" />
+    <state width="1858" height="281" key="GridCell.Tab.0.right" timestamp="1580794685824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1858" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580713710246" />
+    <state width="1858" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580794685824" />
     <state width="958" height="348" key="GridCell.Tab.1.bottom" timestamp="1580713018154">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -262,10 +271,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580672289700" />
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580605931317">
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580754330779">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580605931317" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580754330779" />
     <state x="198" y="368" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1580707623826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -274,22 +283,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="584" y="213" width="725" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580714654786" />
-    <state x="343" y="216" key="new project wizard" timestamp="1580688708281">
+    <state x="343" y="216" key="new project wizard" timestamp="1580777553574">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="343" y="216" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1580688708281" />
+    <state x="343" y="216" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1580777553574" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/testingapps/thepulper/src/test/java/com/javafortesters/pulp/ActionTest/BookActionTest.java</url>
-          <line>55</line>
+          <line>52</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/testingapps/thepulper/src/test/java/com/javafortesters/pulp/ActionTest/BookActionTest.java</url>
-          <line>62</line>
+          <line>59</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
@@ -305,9 +314,15 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/TestingApp_1_3_7$All_in_compendiumdevapps1.ic" NAME="All in compendiumdevapps1 Coverage Results" MODIFIED="1580713232165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TestingApp_1_3_7$All_in_restlisticator.ic" NAME="All in restlisticator Coverage Results" MODIFIED="1580713274137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TestingApp_1_3_7$All_in_compendiumdevappstests.ic" NAME="All in compendiumdevappstests Coverage Results" MODIFIED="1580695640232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TestingApp_1_3_7$All_in_compendiumdevappstests.ic" NAME="All in compendiumdevappstests Coverage Results" MODIFIED="1580793816466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TestingApp_1_3_7$uk_co_compendiumdev_restlisticator_in_restlisticatortests.ic" NAME="uk.co.compendiumdev.restlisticator in restlisticatortests Coverage Results" MODIFIED="1580792598798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>uk.co.compendiumdev.restlisticator.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/TestingApp_1_3_7$All_in_compendiumdevappstests__1_.ic" NAME="All in compendiumdevappstests (1) Coverage Results" MODIFIED="1580704255490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TestingApp_1_3_7$All_in_thepulpertests.ic" NAME="All in thepulpertests Coverage Results" MODIFIED="1580704898551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TestingApp_1_3_7$SmokeTest.ic" NAME="SmokeTest Coverage Results" MODIFIED="1580778928620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>java.uk.co.domain.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingApp_1_3_7$All_in_thepulpertests.ic" NAME="All in thepulpertests Coverage Results" MODIFIED="1580757188582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TestingApp_1_3_7$com_javafortesters_pulp_domain_in_thepulpertests.ic" NAME="com.javafortesters.pulp.domain in thepulpertests Coverage Results" MODIFIED="1580672460709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.javafortesters.pulp.domain.*</FILTER>
     </SUITE>
@@ -317,7 +332,8 @@
     <SUITE FILE_PATH="coverage/TestingApp_1_3_7$All_in_thepulper.ic" NAME="All in thepulper Coverage Results" MODIFIED="1580704887294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TestingApp_1_3_7$All_in_testingapp.ic" NAME="All in testingapp Coverage Results" MODIFIED="1580713710208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TestingApp_1_3_7$All_in_compendiumdevapps1__1_.ic" NAME="All in compendiumdevapps1 (1) Coverage Results" MODIFIED="1580690303079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TestingApp_1_3_7$integration_sparkprocess_in_compendiumdevappstests.ic" NAME="integration.sparkprocess in compendiumdevappstests Coverage Results" MODIFIED="1580704139854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/TestingApp_1_3_7$All_in_seleniumtestpages.ic" NAME="All in seleniumtestpages Coverage Results" MODIFIED="1580778708713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TestingApp_1_3_7$integration_sparkprocess_in_compendiumdevappstests.ic" NAME="integration.sparkprocess in compendiumdevappstests Coverage Results" MODIFIED="1580794615864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>integration.sparkprocess.*</FILTER>
     </SUITE>
   </component>
