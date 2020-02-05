@@ -77,9 +77,12 @@ public class SmokeTest {
 
             /* TODO test subtraction */
 
-            /* TODO test multiplication */
+            /* TODO test multiplication 
+             * test multiply by negative number, by two negatives */
 
-            /* TODO test division */
+            /* TODO test division 
+             * test divide by zero */
+            
         }
 
         @Test
