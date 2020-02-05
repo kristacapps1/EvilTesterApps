@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d4b614ae-aaec-44f0-8cdf-2af27737cd44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/testingapps/restlisticator/src/test/java/uk/co/compendiumdev/restlisticator/api/UserApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/testingapps/restlisticator/src/test/java/uk/co/compendiumdev/restlisticator/api/UserApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/testingapps/seleniumtestpages/src/test/DataDeliver.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/testingapps/seleniumtestpages/src/test/DataDeliver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/testingapps/seleniumtestpages/src/test/SmokeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/testingapps/seleniumtestpages/src/test/SmokeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/java/com/javafortesters/pulp/ActionTest/BookActionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/testingapps/thepulper/src/test/java/com/javafortesters/pulp/ActionTest/BookActionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../listicator.wsdl" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

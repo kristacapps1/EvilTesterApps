@@ -1,3 +1,10 @@
+## Information for Unity members
+Copies of the tests I wrote are in RelevantClassFiles for easy access.  
+The rest of the code is in TestingApp-1.3.7. The code will load into IntelliJ with all the dependencies set up if the steps below are followed.
+The GitHub repository is at https://github.com/kristacapps1/EvilTesterApps but the binaries  
+are not checked in, they are included in .gitignore because it's generally bad practice  
+to commit binaries
+  
 # TestingApp
 This repo is the set of projects created by https://github.com/eviltester to practice good testing techniques.
 I have configured his repo to build and run in IntelliJ IDEA  
