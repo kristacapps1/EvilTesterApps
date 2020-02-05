@@ -292,4 +292,73 @@ public class UserApiTest {
 
         Assert.assertEquals("newkeynewkey", user.getApikey());
     }
+
+    @Test
+    public void userCannotChangeAdminApiKey() {
+
+        Api api = new Api(new TheListicator());
+
+        ApiRequest request = new TestApiRequest();
+        ApiResponse response = new TestApiResponse();
+
+        request.setUserDetails("admin", "password");
+        User user = api.getUser("admin");
+
+        String adminkey = user.getApikey();
+
+        // simulate authentication
+        request.setUserDetails("user", "password");
+        user = api.getUser("user");
+
+        String []parts = {"user", "password"};
+
+        request.setPathParts(parts);
+        request.setBody("{apikey:'newkeynewkey'}");
+        api.setUserApiKey(request, response);
+
+        System.out.println(response.getBody());
+
+        Assert.assertEquals(204, response.getStatus());
+        Assert.assertEquals("",response.getBody());
+
+        request.setUserDetails("admin", "password");
+        user = api.getUser("admin");
+
+        Assert.assertEquals(adminkey, user.getApikey());
+    }
+    @Test
+    public void userCannotChangeOtherUserApiKey() {
+
+        Api api = new Api(new TheListicator());
+
+        ApiRequest request = new TestApiRequest();
+        ApiResponse response = new TestApiResponse();
+
+        api.addNormalUser("user2", "password");
+
+        request.setUserDetails("user", "password");
+        User user = api.getUser("user");
+
+        String userkey = user.getApikey();
+
+        // simulate authentication
+        request.setUserDetails("user2", "password");
+        user = api.getUser("user2");
+
+        String []parts = {"user", "password"};
+
+        request.setPathParts(parts);
+        request.setBody("{apikey:'newkeynewkey'}");
+        api.setUserApiKey(request, response);
+
+        System.out.println(response.getBody());
+
+        Assert.assertEquals(204, response.getStatus());
+        Assert.assertEquals("",response.getBody());
+
+        request.setUserDetails("user", "password");
+        user = api.getUser("user");
+
+        Assert.assertEquals(userkey, user.getApikey());
+    }
 }

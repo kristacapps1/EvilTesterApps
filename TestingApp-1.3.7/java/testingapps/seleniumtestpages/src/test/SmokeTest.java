@@ -89,7 +89,7 @@ public class SmokeTest {
         public void testFrames(){
             //TODO
         }
-
+        /* TODO test the other apps/pages as described in report*/
         @After
         public void closeDriver() {
             driver.close();
