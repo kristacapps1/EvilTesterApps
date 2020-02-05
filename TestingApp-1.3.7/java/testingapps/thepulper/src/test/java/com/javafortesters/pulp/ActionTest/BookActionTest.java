@@ -1,3 +1,4 @@
+/* The Below tests written by Krista Capps 2/2/2020 */
 package com.javafortesters.pulp.ActionTest;
 
 import com.google.gson.Gson;
@@ -12,6 +13,8 @@ import org.eclipse.jetty.http.HttpStatus;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.ArrayList;
 
 public class BookActionTest {
     PulpData books;
@@ -53,6 +56,19 @@ public class BookActionTest {
         EntityResponse responseEntity = bookAction.createReplace(bookid, bodyjson, contentType, "");
         Assert.assertEquals(HttpStatus.OK_200,responseEntity.getStatusCode());
         Assert.assertEquals(bodyResponse,responseEntity.getResponseBody());
+
+        /*  NOTE: to make this test more resilient to format changes to body response of createReplace
+         *  function, should parse bodyResponse and compare it piecewise. That is, if we are not confident
+         *  of body response for createReplace will stay constant, which is probable because we
+         *  will likely extend it in the future
+         */
+        ArrayList<String> bodyResponseList = new ArrayList<String>();
+        bodyResponseList.add("Will Murray");
+        bodyResponseList.add("amended");
+        bodyResponseList.add("books\":[{\"id\":\"1");
+        for(String token : bodyResponseList){
+            Assert.assertTrue("\"" + token + "\""+ " not found in response body",responseEntity.getResponseBody().contains(token));
+        }
     }
 
     @Test
@@ -71,7 +87,7 @@ public class BookActionTest {
         String contentType = "json";
         EntityResponse responseEntity = bookAction.createAmend(bodyjson, contentType, "");
         Assert.assertEquals(HttpStatus.OK_200,responseEntity.getStatusCode());
-        // TODO test body
+        // TODO check body
     }
 
     @Test
@@ -81,6 +97,6 @@ public class BookActionTest {
         String contentType = "json";
         EntityResponse responseEntity = bookAction.patchAmend(bookid, bodyjson, contentType, "");
         Assert.assertEquals(HttpStatus.OK_200,responseEntity.getStatusCode());
-        // TODO test body
+        // TODO check body
     }
 }

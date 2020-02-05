@@ -293,6 +293,7 @@ public class UserApiTest {
         Assert.assertEquals("newkeynewkey", user.getApikey());
     }
 
+    /* The Below tests written by Krista Capps 2/4/2020 */
     @Test
     public void userCannotChangeAdminApiKey() {
 
@@ -326,6 +327,7 @@ public class UserApiTest {
 
         Assert.assertEquals(adminkey, user.getApikey());
     }
+
     @Test
     public void userCannotChangeOtherUserApiKey() {
 

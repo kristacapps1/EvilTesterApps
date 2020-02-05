@@ -1,3 +1,5 @@
+/*   Written by Krista Capps 2/3/2020    */
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
